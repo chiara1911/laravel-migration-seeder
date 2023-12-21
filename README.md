@@ -69,6 +69,7 @@ npm install
 # creo il database da phpmyadmin
 
 
+
 # preparo le rotte file web.php es. 
 Route::get('/books', [BookController::class, 'index'])->name('books.index');
 
@@ -79,5 +80,8 @@ php artisan make:controller NomeController
 php artisan make:model Nome
 
 # creo le views relative
+
+#invio dati al db
+php artisan db:seed --class=HouseTableSeeder
 
 ```
